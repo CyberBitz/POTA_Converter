@@ -5,6 +5,11 @@ This script converts a Parks on the Air (POTA) dataset from JSON format into a G
 
 It also supports filtering the parks based on U.S. state location codes (e.g., `US-GA` for Georgia) and saves the results to a file named with the corresponding filter suffix.
 
+## POTA.app download
+
+Go to https://pota.app/#/parklist and look at the developer tools network tab and select the region i.e. United States of America (US). Then examine the network resources and select the US name for example - right click, copy, then copy response. That is your source file pota_in.json
+
+
 ## 📁 Input
 
 The script expects a file named `pota_in.json` in the same directory, structured like this:
