@@ -63,7 +63,4 @@ This will output a file named `parks_US-GA.json` with only parks where `location
 ## 🛠 Requirements
 
 - Python 3.x
-
-## 📄 License
-
-MIT License
+ 
