@@ -3,7 +3,7 @@ import sys
 
 def run_conversion(filter_state=None):
     # Load the input JSON
-    with open("sd.json", "r") as f:
+    with open("pota_in.json", "r") as f:
         data = json.load(f)
 
     # Create GeoJSON structure
@@ -31,7 +31,7 @@ def run_conversion(filter_state=None):
 
     # Determine output filename
     suffix = f"_{filter_state}" if filter_state else "_ALL"
-    output_path = f"parks_out{suffix}.json"
+    output_path = f"parks_{suffix}.json"
 
     # Write the GeoJSON to file
     with open(output_path, "w") as f:
